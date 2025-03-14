@@ -1,23 +1,32 @@
-* {
+ * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: black;
-  color: aliceblue;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 .head {
   text-align: center;
-  color: aqua;
+  color: red;
   padding: 10px;
 }
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .container div {
+ margin: 5px;
   width: 200px;
   color: red;
+  flex-basis: 20%;
 }
+
+.container .seven{
+   flex-grow: 3;
+} 
+
+
